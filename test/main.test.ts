@@ -1,8 +1,8 @@
-#!/usr/bin/env -S node --experimental-specifier-resolution=node --loader ts-node/esm/transpile-only --no-warnings
+#!/usr/bin/env -S node -r ts-node/register/transpile-only
 import type { AssertionError } from 'assert';
 import assert from 'assert/strict';
 import path from 'path';
-import { buildDepGraph } from '../src/main';
+import { cargoToDepGraph } from '../src/main';
 import { loadFixture } from './helpers/load-fixture';
 
 async function test() {
@@ -183,7 +183,7 @@ async function test() {
     },
   };
 
-  const { depGraph } = await buildDepGraph(cargoFileRaw, cargoLockRaw);
+  const { depGraph } = await cargoToDepGraph(cargoFileRaw, cargoLockRaw);
   const depGraphJson = depGraph.toJSON();
 
   assert.deepStrictEqual(depGraphJson, expected);

@@ -4,6 +4,13 @@
   "type": "commonjs",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
+  "license": "MIT",
+  "author": "Rob Cresswell <robcresswell@pm.me>",
+  "homepage": "https://github.com/robcresswell/cargo-to-dep-graph",
+  "repository": "github:robcresswell/cargo-to-dep-graph",
+  "bugs": {
+    "url": "https://github.com/robcresswell/cargo-to-dep-graph/issues"
+  },
   "files": [
     "dist"
   ],

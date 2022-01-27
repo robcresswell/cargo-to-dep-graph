@@ -1,7 +1,7 @@
 # cargo-to-dep-graph
 
-A small library that converts Cargo files (a `cargo.toml` and its
-respective `cargo.lock`) into a
+A small library that converts Cargo files (a `cargo.toml` and its respective
+`cargo.lock`) into a
 [dependency graph](https://www.npmjs.com/package/@snyk/dep-graph)
 
 ## Getting started

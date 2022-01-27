@@ -1,13 +1,9 @@
 {
   "name": "cargo-to-dep-graph",
   "version": "0.0.0",
-  "type": "module",
-  "exports": {
-    ".": {
-      "import": "./dist/main.js",
-      "types": "./dist/main.d.ts"
-    }
-  },
+  "type": "commonjs",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "files": [
     "dist"
   ],

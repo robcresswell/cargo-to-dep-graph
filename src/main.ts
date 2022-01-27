@@ -2,7 +2,7 @@ import toml from '@iarna/toml';
 import { DepGraph, DepGraphBuilder } from '@snyk/dep-graph';
 import { eventLoopSpinner } from 'event-loop-spinner';
 
-export async function buildDepGraph(
+export async function cargoToDepGraph(
   cargoFileRaw: string,
   cargoLockRaw: string,
 ): Promise<{ depGraph: DepGraph }> {

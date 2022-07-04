@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@iarna/toml": "^2.2.5",
-    "@snyk/dep-graph": "^1.30.0",
+    "@snyk/dep-graph": "^2.3.0",
     "event-loop-spinner": "^2.2.0"
   },
   "devDependencies": {
